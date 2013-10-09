@@ -38,10 +38,7 @@
       <div class="slides">
         <section>
           <h1>HTML5</h1>
-          <h3>och en del annat som inte alls är HTML5 men som folk menar när de säger HTML5 för HTML5 låter så coolt har vi förresten sagt HTML5 tillräckligt många gånger nu ok då kör vi!</h3>
-          <p>
-            <small>All materialstöld utförd av Adrian</small>
-          </p>
+          <h4 style="line-height: 1.2em;">och en del annat som inte alls är HTML5 men som folk menar när de säger HTML5 för HTML5 låter så coolt</h4>
         </section>
 
         <section>
@@ -81,7 +78,47 @@
             </aside>
           </section>
         </section>
+
         <section>
+          <h2>Markup</h2>
+
+          <aside class="notes">
+            Låt oss prata lite om markup.
+          </aside>
+        </section>
+
+        <section>
+
+          <section data-transition="none">
+            <h2>Alltså sånt här</h2>
+            <p>
+              <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+  &lt;head&gt;…&lt;/head&gt;
+  &lt;body&gt;
+    &lt;div class="site-header"&gt;
+      &lt;h1&gt;Välkommen!&lt;/h1&gt;
+      &lt;ul class="site-nav"&gt;
+        &lt;li&gt;
+          …
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;div class="content"&gt;
+      &lt;div class="article"&gt;
+        …
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="site-footer"&gt;
+      &lt;p class="legal"&gt;Copyright blah blah blah&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+              </code></pre>
+            </p>
+          </section>
 
           <section data-transition="none">
             <h2>HTML &lt; 5</h2>
@@ -106,6 +143,194 @@
       &lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="site-footer"&gt;
+      &lt;p class="legal"&gt;Copyright blah blah blah&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+              </code></pre>
+            </p>
+
+            <aside class="notes">
+              Såhär såg html ut förr i tiden.<br />
+              I allra värsta fall användes tabeller överallt, men sådana brott mot mänskligheten ska jag inte utsätta er för.<br />
+              <br />
+              Tabeller är ok att använda! <em>OM</em> innehållet i dem är tabell-data!<br />
+              Då inte bara <em>får</em> man, då <em>ska</em> man använda tabeller.
+            </aside>
+          </section>
+
+          <section data-transition="none">
+            <h2>HTML &lt; 5</h2>
+            <p>
+              <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+  &lt;head&gt;…&lt;/head&gt;
+  &lt;body&gt;
+    &lt;div class="site-header"&gt; &lt;--
+      &lt;h1&gt;Välkommen!&lt;/h1&gt;
+      &lt;ul class="site-nav"&gt;
+        &lt;li&gt;
+          …
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;div class="content"&gt; &lt;--
+      &lt;div class="article"&gt; &lt;--
+        …
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="site-footer"&gt; &lt;--
+      &lt;p class="legal"&gt;Copyright blah blah blah&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+              </code></pre>
+            </p>
+
+            <aside class="notes">
+              Massor av div:ar. Div:ar säger ingenting om innehållet.<br />
+              De är inte <em>semantiska</em>
+            </aside>
+          </section>
+
+          <section data-transition="none">
+            <h2>HTML &lt; 5</h2>
+            <p>
+              <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+  &lt;head&gt;…&lt;/head&gt;
+  &lt;body&gt;
+    &lt;div class="site-header"&gt;
+      &lt;h1&gt;Välkommen!&lt;/h1&gt; &lt;--
+      &lt;ul class="site-nav"&gt; &lt;--
+        &lt;li&gt; &lt;--
+          …
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;div class="content"&gt;
+      &lt;div class="article"&gt;
+        …
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="site-footer"&gt;
+      &lt;p class="legal"&gt;Copyright blah blah blah&lt;/p&gt; &lt;--
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+              </code></pre>
+            </p>
+
+            <aside class="notes">
+              h1, ul, li och p är semantiska, åtminstone delvis.<br />
+              h1 är en rubrik.<br />
+              ul och li är en o-ordnad lista respektive en punkt i en lista.<br />
+              p är en paragraf, den ska alltså innehålla ett sammanhängande textstycke.
+            </aside>
+          </section>
+
+          <section data-transition="none">
+            <h2>HTML &lt; 5</h2>
+            <p>
+              <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+  &lt;head&gt;…&lt;/head&gt;
+  &lt;body&gt;
+    &lt;div class="site-header"&gt; &lt;--
+      &lt;h1&gt;Välkommen!&lt;/h1&gt;
+      &lt;ul class="site-nav"&gt; &lt;--
+        &lt;li&gt;
+          …
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;div class="content"&gt; &lt;--
+      &lt;div class="article"&gt; &lt;--
+        …
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="site-footer"&gt; &lt;--
+      &lt;p class="legal"&gt;Copyright blah blah blah&lt;/p&gt; &lt;--
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+              </code></pre>
+            </p>
+
+            <aside class="notes">
+              Mycket av "semantiken" finns i klassnamnen.<br />
+              Men klassnamn är inte standardiserade, så maskiner förstår dem inte.
+            </aside>
+          </section>
+
+          <section data-transition="none">
+            <h2>HTML &lt; 5</h2>
+            <p>
+              <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+  &lt;head&gt;…&lt;/head&gt;
+  &lt;body&gt;
+    &lt;div class="site-header dark wide padding no-margin-top" id="site_header" style="color: red;"&gt;
+      &lt;h1 class="navy-blue" id="site_header-heading"&gt;Välkommen!&lt;/h1&gt;
+      &lt;ul class="site-nav navigation padding-top" style="color: black !important;"&gt;
+        &lt;li id="home_link" onmouseover="javascript:atrociousInlineCodeHere; return false;"&gt;
+          …
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;div class="content large-padding no-padding-bottom padding-bottom"&gt;
+      &lt;div class="article blog-post with-comments"&gt;
+        …
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="site-footer" id="site_footer" style="position: fixed; bottom: 0; left: 0; right: 0;"&gt;
+      &lt;p class="legal"&gt;Copyright blah blah blah&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+              </code></pre>
+            </p>
+
+            <aside class="notes">
+              Dessutom ser det oftare ut såhär i verkligheten.
+            </aside>
+          </section>
+
+        </section>
+
+        <section>
+
+          <section data-transition="none">
+            <h2>HTML &lt; 5</h2>
+            <p>
+              <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+  &lt;head&gt;…&lt;/head&gt;
+  &lt;body&gt;
+    &lt;div class="site-header dark wide padding no-margin-top" id="site_header" style="color: red;"&gt;
+      &lt;h1 class="navy-blue" id="site_header-heading"&gt;Välkommen!&lt;/h1&gt;
+      &lt;ul class="site-nav navigation padding-top" style="color: black !important;"&gt;
+        &lt;li id="home_link" onmouseover="javascript:atrociousInlineCodeHere; return false;"&gt;
+          …
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;div class="content large-padding no-padding-bottom padding-bottom"&gt;
+      &lt;div class="article blog-post with-comments"&gt;
+        …
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="site-footer" id="site_footer" style="position: fixed; bottom: 0; left: 0; right: 0;"&gt;
       &lt;p class="legal"&gt;Copyright blah blah blah&lt;/p&gt;
     &lt;/div&gt;
   &lt;/body&gt;
@@ -181,6 +406,7 @@
             </p>
 
             <aside class="notes">
+              Ny kortare DOCTYPE, försätter alla webläsare i standard-mode<br />
               Det finns ingen anledning någonsin att <em>inte</em> använda den nya doctypen på en ny sajt.
             </aside>
           </section>
@@ -561,6 +787,471 @@
 
         </section>
 
+        <section>
+
+          <section>
+            <h2>Endast div, p och h1 - ingen stajling</h2>
+            <iframe src="non-semantic.html" style="width: 100%; height: 400px;"></iframe>
+          </section>
+
+          <section>
+            <h2>header, section, article, h1 och p - ingen stajling</h2>
+            <iframe src="semantic.html" style="width: 100%; height: 400px;"></iframe>
+
+            <aside class="notes">
+              Webbläsaren kan ge innehållet en intelligent grundstajling eftersom webbläsaren förstår innehållet.<br />
+              <br />
+              Det innebär att Google förstår innehållet.<br />
+              Det innebär att en screen-reader förstår innehållet.<br />
+              <br />
+              Det innebär också att det är mycket lättare att stajla innehållet utan att lägga till en miljard klasser och id:n.
+            </aside>
+          </section>
+
+        </section>
+
+        <section>
+          <p>Och apropå stajling…</p>
+        </section>
+
+        <section>
+
+          <section>
+            <h2>CSS</h2>
+          </section>
+
+          <section>
+            <h2>Lite grunder:</h2>
+            <ul>
+              <li class="fragment">Inga inline-styles</li>
+              <li class="fragment">Inga klassnamn som beskriver hur elementet ser ut</li>
+              <li class="fragment">Stajla på klasser, inte på id:n</li>
+              <li class="fragment" id="important-1">Undvik !important</li>
+              <li class="fragment" id="important-2">Sky !important som pesten!</li>
+            </ul>
+          </section>
+
+        </section>
+
+        <section>
+          <h2>Inga inline-styles</h2>
+          <p>
+            <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
+&lt;article style="color: blue;"&gt;
+            </code></pre>
+          </p>
+
+          <aside class="notes">
+            Inline-styles, motverkar hela poängen med CSS, att stajling ska vara återanvändbar.<br />
+            Alla element som är av samma typ och ser likadana ut, så man kan också kunna ändra utseende på på ett och samma ställe.<br />
+            Ingen search-and-replace ska behövas.<br />
+            <br />
+            Inline-styles går aldrig att skriva över från ett style-sheet!
+          </aside>
+        </section>
+
+        <section>
+
+          <section data-transition="none">
+            <h2>Inga klassnamn som beskriver hur elementet ser ut</h2>
+            <p>
+              <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
+&lt;article class="blue-text"&gt;
+              </code></pre>
+              <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
+.blue-text {
+  color: blue;
+}
+              </code></pre>
+            </p>
+
+            <aside class="notes">
+              Någon som kan se ett problem med detta?
+            </aside>
+          </section>
+
+          <section data-transition="none">
+            <h2>Inga klassnamn som beskriver hur elementet ser ut</h2>
+            <p>
+              <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
+&lt;article class="blue-text"&gt;
+              </code></pre>
+              <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
+.blue-text {
+  color: green;
+}
+              </code></pre>
+            </p>
+
+            <aside class="notes">
+              Såg ni vad som ändrades?
+            </aside>
+          </section>
+
+          <section data-transition="none">
+            <h2>Klassnamn ska beskriva vad objektet är</h2>
+            <p>
+              <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
+&lt;article class="featured-post"&gt;
+              </code></pre>
+              <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
+.featured-post {
+  color: blue;
+}
+              </code></pre>
+            </p>
+
+            <aside class="notes">
+              Såg ni vad som ändrades?
+            </aside>
+          </section>
+
+        </section>
+
+        <section>
+          <h2>Stajla på klasser, inte på id:n</h2>
+
+          <aside class="notes">
+            Endast ett element med ett visst ID får finnas på sidan samtidigt.<br />
+            Även detta gör ju att återanvändbarheten förloras.<br />
+            ID:n kan vara ok om elementet verkligen är helt unikt, men fundera igenom om du verkligen är helt säker på att du aldrig kan komma att vilja återanvända stajlingen.
+          </aside>
+        </section>
+
+        <section>
+          <h2>Sky !important som pesten!</h2>
+          <p>
+            <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
+&lt;article class="featured-post"&gt;
+            </code></pre>
+            <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
+.featured-post {
+color: blue !important;
+}
+            </code></pre>
+          </p>
+
+          <aside class="notes">
+            !important är ett tecken på väldigt allvarliga problem med er CSS.<br />
+            För att förklara varför måste vi titta lite på…
+          </aside>
+        </section>
+
+        <section>
+
+          <section>
+            <h2>Specificitet</h2>
+            <p class="fragment">eller</p>
+            <h3 class="fragment">Vem bestämmer?</h3>
+          </section>
+
+        </section>
+
+        <section>
+
+          <section>
+            <h2>CSS-selektorer</h2>
+            <p>
+              <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
+&lt;article class="classname-1 classname-2" id="unique-id"&gt;
+              </code></pre>
+
+              <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
+article {
+  color: red;
+}
+classname-1 {
+  color: blue;
+}
+article.classname-2 {
+  color: green;
+}
+.classname-1.classname-2 {
+  color: aqua;
+}
+#unique-id {
+  color: orange;
+}
+              </code></pre>
+            </p>
+
+            <aside class="notes">
+              Varje selektor har här en högre specificitet än föregående selektor.<br />
+              Texten i elementet kommer att bli orange.
+            </aside>
+          </section>
+
+          <section>
+            <p>
+              <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
+&lt;article class="classname-1 classname-2" id="unique-id"&gt;
+              </code></pre>
+
+              <ol>
+                <li class="fragment"><em>#id</em> är mest värt</li>
+                <li class="fragment"><em>.class</em> är värt mindre än id</li>
+                <li class="fragment"><em>element</em> är minst värt</li>
+              </ol>
+            </p>
+          </section>
+
+          <section>
+            <p>
+              <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
+&lt;article class="classname-1 classname-2" id="unique-id"&gt;
+              </code></pre>
+
+              <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
+article { &lt;-- 0.0.1
+  color: red;
+}
+classname-1 { &lt;-- 0.1.0
+  color: blue;
+}
+article.classname-2 { &lt;-- 0.1.1
+  color: green;
+}
+.classname-1.classname-2 { &lt;-- 0.2.0
+  color: aqua;
+}
+#unique-id { &lt;-- 1.0.0
+  color: orange;
+}
+              </code></pre>
+            </p>
+
+            <aside class="notes">
+              Poängen räknas inte ihop!
+            </aside>
+          </section>
+
+        </section>
+
+        <section>
+
+          <section>
+            <h2>Descendants</h2>
+            <p>
+              <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
+&lt;p&gt;
+  orange
+&lt;/p&gt;
+
+&lt;article&gt;
+  red
+
+  &lt;p&gt;
+    orange
+  &lt;/p&gt;
+
+  &lt;section&gt;
+    &lt;p&gt;
+      orange
+    &lt;/p&gt;
+
+    red
+  &lt;/section&gt;
+&lt;/article&gt;
+              </code></pre>
+
+              <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
+p {
+  color: orange;
+}
+article {
+  color: red;
+}
+              </code></pre>
+            </p>
+
+            <aside class="notes">
+              All text inuti article blir röd, om det inte finns en konkurrerande stajling som verkar på ett element längre ned i trädet.
+            </aside>
+          </section>
+
+          <section>
+            <h2>Descendants</h2>
+            <p>
+              <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
+&lt;p&gt;
+  orange
+&lt;/p&gt;
+
+&lt;article&gt;
+  red
+
+  &lt;p&gt;
+    blue
+  &lt;/p&gt;
+
+  &lt;section&gt;
+    &lt;p&gt;
+      blue
+    &lt;/p&gt;
+
+    red
+  &lt;/section&gt;
+&lt;/article&gt;
+              </code></pre>
+
+              <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
+p {
+  color: orange;
+}
+article {
+  color: red;
+}
+article p {
+  color: blue;
+}
+              </code></pre>
+            </p>
+
+            <aside class="notes">
+              Mellanslaget betyder att selektorn matchar p-element som finns inuti article-element.<br />
+              Det gör ingen skillnad om det finns andra element emellan.
+            </aside>
+          </section>
+
+          <section>
+            <h2>Descendants</h2>
+            <p>
+              <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
+&lt;p&gt;
+  orange
+&lt;/p&gt;
+
+&lt;article&gt;
+  red
+
+  &lt;p&gt;
+    green &lt;-- WTF?
+  &lt;/p&gt;
+
+  &lt;section&gt;
+    &lt;p&gt;
+      orange
+    &lt;/p&gt;
+
+    red
+  &lt;/section&gt;
+&lt;/article&gt;
+              </code></pre>
+
+              <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
+p {
+  color: orange;
+}
+article {
+  color: red;
+}
+article p {
+  color: blue;
+}
+article&gt;p {
+  color: green;
+}
+              </code></pre>
+            </p>
+          </section>
+
+          <section>
+            <h2>&gt; ?</h2>
+            <p>
+              <pre><code data-trim contenteditable style="margin-top: 20px;">
+article&gt;p {
+  color: green;
+}
+              </code></pre>
+            </p>
+
+            <aside class="notes">
+              Större-än-tecknet matchar "direct descendants".<br />
+              Alltså endast när p är ett child-element till article.<br />
+              Inga andra element får finnas emellan.
+            </aside>
+          </section>
+
+        </section>
+
+        <section>
+
+          <section>
+            <h2>Mellanslag verkar ju bra ju!</h2>
+            <ul>
+              <li class="fragment">Dålig performance</li>
+              <li class="fragment">Kommer bita dig, HÅRT</li>
+            </ul>
+
+            <aside class="notes">
+              Mellanslag är skitfarligt.
+            </aside>
+          </section>
+
+          <section>
+            <h2>Dålig performance</h2>
+            <pre><code data-trim contenteditable style="margin-top: 20px;">
+article p {}
+            </code></pre>
+            <p class="fragment">Browserns läser det som:</p>
+            <ul>
+              <li class="fragment">För varje p</li>
+              <li class="fragment">Leta uppför trädet tills du hittar en article eller topp-noden</li>
+            </ul>
+
+            <aside class="notes">
+              Förmodligen inget gigantiskt problem, men inte bra om man är Facebook och har flera megabyte CSS och HTML.
+            </aside>
+          </section>
+
+          <section>
+            <h2>Kommer bita dig, HÅRT</h2>
+            <pre><code data-trim contenteditable style="margin-top: 20px;">
+article p {}
+            </code></pre>
+            <p class="fragment">Du ska läsa det som:</p>
+            <ul>
+              <li class="fragment">Så fort jag flyttar något finns det risk att delar stajlas om helt okontrollerat</li>
+            </ul>
+
+            <aside class="notes">
+              Förmodligen inget gigantiskt problem, men inte bra om man är Facebook och har flera megabyte CSS och HTML.
+            </aside>
+          </section>
+
+        </section>
+
+        <section>
+
+          <section>
+            <h2>!important</h2>
+
+            <aside class="notes">
+              Och det är när man skrivit dålig css från början som man börjar använda !important.
+            </aside>
+          </section>
+
+          <section>
+            <h2>Grundregler</h2>
+            <ul>
+              <li class="fragment">Specifik selektor - specifik stajling</li>
+              <li class="fragment">Generell selektor - generell stajling</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Specifik selektor</h2>
+            <p>
+              <pre><code data-trim contenteditable style="margin-top: 20px;">
+ul {
+
+}
+              </code></pre>
+            </p>
+          </section>
+
+        </section>
+
       </div>
 
     </div>
@@ -590,6 +1281,12 @@
           { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
           { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
         ]
+      });
+
+      Reveal.addEventListener('fragmentshown', function(event){
+        if (event.fragment.id === 'important-2') {
+          document.getElementById('important-1').style.textDecoration = 'line-through';
+        }
       });
 
     </script>
