@@ -836,7 +836,7 @@
         <section>
           <h2>Inga inline-styles</h2>
           <p>
-            <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
+            <pre><code data-trim contenteditable style="margin-top: 20px;">
 &lt;article style="color: blue;"&gt;
             </code></pre>
           </p>
@@ -855,10 +855,10 @@
           <section data-transition="none">
             <h2>Inga klassnamn som beskriver hur elementet ser ut</h2>
             <p>
-              <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
+              <pre><code data-trim contenteditable style="margin-top: 20px;">
 &lt;article class="blue-text"&gt;
               </code></pre>
-              <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
+              <pre><code data-trim contenteditable style="margin-top: 20px;">
 .blue-text {
   color: blue;
 }
@@ -873,37 +873,29 @@
           <section data-transition="none">
             <h2>Inga klassnamn som beskriver hur elementet ser ut</h2>
             <p>
-              <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
+              <pre><code data-trim contenteditable style="margin-top: 20px;">
 &lt;article class="blue-text"&gt;
               </code></pre>
-              <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
+              <pre><code data-trim contenteditable style="margin-top: 20px;">
 .blue-text {
   color: green;
 }
               </code></pre>
             </p>
-
-            <aside class="notes">
-              Såg ni vad som ändrades?
-            </aside>
           </section>
 
           <section data-transition="none">
             <h2>Klassnamn ska beskriva vad objektet är</h2>
             <p>
-              <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
+              <pre><code data-trim contenteditable style="margin-top: 20px;">
 &lt;article class="featured-post"&gt;
               </code></pre>
-              <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
+              <pre><code data-trim contenteditable style="margin-top: 20px;">
 .featured-post {
   color: blue;
 }
               </code></pre>
             </p>
-
-            <aside class="notes">
-              Såg ni vad som ändrades?
-            </aside>
           </section>
 
         </section>
@@ -921,12 +913,12 @@
         <section>
           <h2>Sky !important som pesten!</h2>
           <p>
-            <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
+            <pre><code data-trim contenteditable style="margin-top: 20px;">
 &lt;article class="featured-post"&gt;
             </code></pre>
-            <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
+            <pre><code data-trim contenteditable style="margin-top: 20px;">
 .featured-post {
-color: blue !important;
+  color: blue !important;
 }
             </code></pre>
           </p>
@@ -960,7 +952,7 @@ color: blue !important;
 article {
   color: red;
 }
-classname-1 {
+.classname-1 {
   color: blue;
 }
 article.classname-2 {
@@ -983,7 +975,7 @@ article.classname-2 {
 
           <section>
             <p>
-              <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
+              <pre><code data-trim contenteditable style="margin-top: 20px;">
 &lt;article class="classname-1 classname-2" id="unique-id"&gt;
               </code></pre>
 
@@ -1130,7 +1122,7 @@ article p {
 
   &lt;section&gt;
     &lt;p&gt;
-      orange
+      blue
     &lt;/p&gt;
 
     red
@@ -1172,46 +1164,15 @@ article&gt;p {
             </aside>
           </section>
 
-        </section>
-
-        <section>
-
           <section>
-            <h2>Mellanslag verkar ju bra ju!</h2>
-            <ul>
-              <li class="fragment">Dålig performance</li>
-              <li class="fragment">Kommer bita dig, HÅRT</li>
-            </ul>
-
-            <aside class="notes">
-              Mellanslag är skitfarligt.
-            </aside>
-          </section>
-
-          <section>
-            <h2>Dålig performance</h2>
+            <h2>Performance</h2>
             <pre><code data-trim contenteditable style="margin-top: 20px;">
 article p {}
             </code></pre>
-            <p class="fragment">Browserns läser det som:</p>
+            <p class="fragment">Browserns läser detta som:</p>
             <ul>
               <li class="fragment">För varje p</li>
               <li class="fragment">Leta uppför trädet tills du hittar en article eller topp-noden</li>
-            </ul>
-
-            <aside class="notes">
-              Förmodligen inget gigantiskt problem, men inte bra om man är Facebook och har flera megabyte CSS och HTML.
-            </aside>
-          </section>
-
-          <section>
-            <h2>Kommer bita dig, HÅRT</h2>
-            <pre><code data-trim contenteditable style="margin-top: 20px;">
-article p {}
-            </code></pre>
-            <p class="fragment">Du ska läsa det som:</p>
-            <ul>
-              <li class="fragment">Så fort jag flyttar något finns det risk att delar stajlas om helt okontrollerat</li>
             </ul>
 
             <aside class="notes">
@@ -1227,7 +1188,7 @@ article p {}
             <h2>!important</h2>
 
             <aside class="notes">
-              Och det är när man skrivit dålig css från början som man börjar använda !important.
+              Det är när man skrivit dålig css från början som man börjar använda !important.
             </aside>
           </section>
 
@@ -1236,18 +1197,64 @@ article p {}
             <ul>
               <li class="fragment">Specifik selektor - specifik stajling</li>
               <li class="fragment">Generell selektor - generell stajling</li>
+              <li class="fragment">Var medveten om var i selektorn specificiteten finns</li>
             </ul>
           </section>
 
           <section>
-            <h2>Specifik selektor</h2>
             <p>
               <pre><code data-trim contenteditable style="margin-top: 20px;">
-ul {
-
+&lt;nav class="mainmenu"&gt;
+  &lt;ul class="toplevel"&gt;
+    &lt;li&gt;
+      &lt;a href="#" class="button"&gt;text&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+              </code></pre>
+              <pre><code data-trim contenteditable style="margin-top: 20px;">
+nav.mainmenu>ul.toplevel>li>a {
+  color: red;
+}
+a.button {
+  color: black;
 }
               </code></pre>
             </p>
+
+            <aside class="notes">
+              Vilken färg får texten?<br />
+              Varför?<br />
+              <br />
+              Sammanlagt har selektorn hög specificitet, men längst åt höger är den generell.<br />
+              Det blir svårt att skriva över utan att använda !important.
+            </aside>
+          </section>
+
+          <section>
+            <p>
+              <pre><code data-trim contenteditable style="margin-top: 20px;">
+&lt;nav class="mainmenu"&gt;
+  &lt;ul class="toplevel"&gt;
+    &lt;li&gt;
+      &lt;a href="#" class="button"&gt;text&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+              </code></pre>
+              <pre><code data-trim contenteditable style="margin-top: 20px;">
+nav.mainmenu a.menu-link {
+  color: red;
+}
+a.button {
+  color: black;
+}
+              </code></pre>
+            </p>
+
+            <aside class="notes">
+              Den övre selektorn har högre specificitet, men den matchar inte knappen på grund av att klassen inte stämmer.
+            </aside>
           </section>
 
         </section>
