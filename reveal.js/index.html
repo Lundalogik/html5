@@ -1026,8 +1026,8 @@ article.classname-2 { &lt;-- 0.1.1
           </section>
 
           <section>
-            <p>
-              <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
+            <div id="descendants-1" style="background-color: white; margin-left: auto; margin-right: auto; padding: 30px; width: 84%; text-align: left; font-size: 14px; color: black;"></div>
+            <pre><code data-trim contenteditable class="liveCoding xml" data-livecoding-id="descendants-1" style="font-size: 14px; line-height: 18px; margin-top: 20px;">
 &lt;p&gt;
   p
 &lt;/p&gt;
@@ -1047,40 +1047,24 @@ article.classname-2 { &lt;-- 0.1.1
     &lt;/p&gt;
   &lt;/section&gt;
 &lt;/article&gt;
-              </code></pre>
-
-              <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
+            </code></pre>
+            <pre><code data-trim contenteditable class="liveCoding css" data-livecoding-id="descendants-1" style="font-size: 14px; line-height: 18px; margin-top: 20px;">
 p {
-  color: orange;
+  //color: orange;
 }
 article {
-  color: red;
+  //color: red;
 }
-              </code></pre>
-            </p>
-          </section>
-
-          <section>
-            <iframe src="descendants1.html" style="height: 10em; width: 100%"></iframe>
-            <p>
-              <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
-p {
-  color: orange;
-}
-article {
-  color: red;
-}
-              </code></pre>
-            </p>
+            </code></pre>
 
             <aside class="notes">
-              All text inuti article blir röd, om det inte finns en konkurrerande stajling som verkar på ett element längre ned i trädet.
+              All text inuti article blir röd, om det inte finns en konkurrerande stajling som verkar på ett element längre ned i trädet. (Närmare den nod som ska stajlas.)
             </aside>
           </section>
 
           <section>
-            <p>
-              <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
+            <div id="descendants-2" style="background-color: white; margin-left: auto; margin-right: auto; padding: 30px; width: 84%; text-align: left; font-size: 14px;"></div>
+            <pre><code data-trim contenteditable class="liveCoding xml" data-livecoding-id="descendants-2" style="font-size: 14px; line-height: 18px; margin-top: 20px;">
 &lt;p&gt;
   p
 &lt;/p&gt;
@@ -1100,9 +1084,8 @@ article {
     &lt;/p&gt;
   &lt;/section&gt;
 &lt;/article&gt;
-              </code></pre>
-
-              <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
+            </code></pre>
+            <pre><code data-trim contenteditable class="liveCoding css" data-livecoding-id="descendants-2" style="font-size: 14px; line-height: 18px; margin-top: 20px;">
 p {
   color: orange;
 }
@@ -1110,27 +1093,9 @@ article {
   color: red;
 }
 article p {
-  color: blue;
+  //color: blue;
 }
-              </code></pre>
-            </p>
-          </section>
-
-          <section>
-            <iframe src="descendants2.html" style="height: 10em; width: 100%"></iframe>
-            <p>
-              <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
-p {
-  color: orange;
-}
-article {
-  color: red;
-}
-article p {
-  color: blue;
-}
-              </code></pre>
-            </p>
+            </code></pre>
 
             <aside class="notes">
               Mellanslaget betyder att selektorn matchar p-element som finns inuti article-element.<br />
@@ -1139,8 +1104,8 @@ article p {
           </section>
 
           <section>
-            <p>
-              <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
+            <div id="descendants-3" style="background-color: white; margin-left: auto; margin-right: auto; padding: 30px; width: 84%; text-align: left; font-size: 14px;"></div>
+            <pre><code data-trim contenteditable class="liveCoding xml" data-livecoding-id="descendants-3" style="font-size: 14px; line-height: 18px; margin-top: 20px;">
 &lt;p&gt;
   p
 &lt;/p&gt;
@@ -1160,9 +1125,8 @@ article p {
     &lt;/p&gt;
   &lt;/section&gt;
 &lt;/article&gt;
-              </code></pre>
-
-              <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
+            </code></pre>
+            <pre><code data-trim contenteditable class="liveCoding css" data-livecoding-id="descendants-3" style="font-size: 14px; line-height: 18px; margin-top: 20px;">
 p {
   color: orange;
 }
@@ -1173,30 +1137,9 @@ article p {
   color: blue;
 }
 article&gt;p {
-  color: green;
+  //color: green;
 }
-              </code></pre>
-            </p>
-          </section>
-
-          <section>
-            <iframe src="descendants3.html" style="height: 10em; width: 100%"></iframe>
-            <p>
-              <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
-p {
-  color: orange;
-}
-article {
-  color: red;
-}
-article p {
-  color: blue;
-}
-article&gt;p {
-  color: green;
-}
-              </code></pre>
-            </p>
+            </code></pre>
           </section>
 
           <section>
@@ -1221,13 +1164,17 @@ article&gt;p {
             <pre><code data-trim contenteditable style="margin-top: 20px;">
 article p {}
             </code></pre>
-            <p class="fragment">Browserns läser detta som:</p>
+            <p class="fragment">Browsern läser detta som:</p>
             <ul>
               <li class="fragment">För varje p</li>
               <li class="fragment">Leta uppför trädet tills du hittar en article eller topp-noden</li>
             </ul>
 
             <aside class="notes">
+              Browsern läser detta som:<br />
+              För varje p<br />
+              Leta uppför trädet tills du hittar en article eller topp-noden<br />
+              <br />
               Förmodligen inget gigantiskt problem, men inte bra om man är Facebook och har flera megabyte CSS och HTML.
             </aside>
           </section>
@@ -1311,6 +1258,33 @@ a.button {
 
         </section>
 
+        <section>
+
+          <section>
+            <h2>CSS 3</h2>
+          </section>
+
+          <section>
+            <h2>border-radius</h2>
+            <p>
+              <div id="border-radius-1" style="background-color: white; margin-left: auto; margin-right: auto; padding: 30px; width: 84%; text-align: center;"></div>
+              <pre><code data-trim contenteditable class="liveCoding xml" data-livecoding-id="border-radius-1" style="margin-top: 20px;">
+<div class="button">text</div>
+              </code></pre>
+              <pre><code data-trim contenteditable class="liveCoding css" data-livecoding-id="border-radius-1" style="margin-top: 20px;">
+.button {
+  background-color: green;
+  border-radius: 10px;
+  color: orange;
+  display: inline-block;
+  padding: 5px 10px;
+}
+              </code></pre>
+            </p>
+          </section>
+
+        </section>
+
       </div>
 
     </div>
@@ -1338,7 +1312,8 @@ a.button {
           { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
           { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
           { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-          { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+          { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: 'plugin/live-coding/live-coding.js', async: true, condition: function() { return !!document.body.classList; } }
         ]
       });
 
