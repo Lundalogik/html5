@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Descendants 1</title>
+    <link rel="stylesheet" href="descendants.css">
+    <style>
+      p {
+        color: orange;
+      }
+      article {
+        color: red;
+      }
+      article p {
+        color: blue;
+      }
+      article>p {
+        color: green;
+      }
+    </style>
+  </head>
+  <body style="background-color: white;">
+    <p>
+      p
+    </p>
+
+    <article>
+      article
+
+      <p>
+        p
+      </p>
+
+      <section>
+        section
+
+        <p>
+          p <span style="color: black; font-weight: bold;">&lt;-- WTF?</span>
+        </p>
+      </section>
+    </article>
+
+  </body>
+</html>

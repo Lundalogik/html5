@@ -1023,29 +1023,46 @@ article.classname-2 { &lt;-- 0.1.1
 
           <section>
             <h2>Descendants</h2>
+          </section>
+
+          <section>
             <p>
               <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
 &lt;p&gt;
-  orange
+  p
 &lt;/p&gt;
 
 &lt;article&gt;
-  red
+  article
 
   &lt;p&gt;
-    orange
+    p
   &lt;/p&gt;
 
   &lt;section&gt;
-    &lt;p&gt;
-      orange
-    &lt;/p&gt;
+    section
 
-    red
+    &lt;p&gt;
+      p
+    &lt;/p&gt;
   &lt;/section&gt;
 &lt;/article&gt;
               </code></pre>
 
+              <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
+p {
+  color: orange;
+}
+article {
+  color: red;
+}
+              </code></pre>
+            </p>
+          </section>
+
+          <section>
+            <iframe src="descendants1.html" style="height: 10em; width: 100%"></iframe>
+            <p>
               <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
 p {
   color: orange;
@@ -1062,30 +1079,46 @@ article {
           </section>
 
           <section>
-            <h2>Descendants</h2>
             <p>
               <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
 &lt;p&gt;
-  orange
+  p
 &lt;/p&gt;
 
 &lt;article&gt;
-  red
+  article
 
   &lt;p&gt;
-    blue
+    p
   &lt;/p&gt;
 
   &lt;section&gt;
-    &lt;p&gt;
-      blue
-    &lt;/p&gt;
+    section
 
-    red
+    &lt;p&gt;
+      p
+    &lt;/p&gt;
   &lt;/section&gt;
 &lt;/article&gt;
               </code></pre>
 
+              <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
+p {
+  color: orange;
+}
+article {
+  color: red;
+}
+article p {
+  color: blue;
+}
+              </code></pre>
+            </p>
+          </section>
+
+          <section>
+            <iframe src="descendants2.html" style="height: 10em; width: 100%"></iframe>
+            <p>
               <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
 p {
   color: orange;
@@ -1106,30 +1139,49 @@ article p {
           </section>
 
           <section>
-            <h2>Descendants</h2>
             <p>
               <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
 &lt;p&gt;
-  orange
+  p
 &lt;/p&gt;
 
 &lt;article&gt;
-  red
+  article
 
   &lt;p&gt;
-    green &lt;-- WTF?
+    p
   &lt;/p&gt;
 
   &lt;section&gt;
-    &lt;p&gt;
-      blue
-    &lt;/p&gt;
+    section
 
-    red
+    &lt;p&gt;
+      p
+    &lt;/p&gt;
   &lt;/section&gt;
 &lt;/article&gt;
               </code></pre>
 
+              <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
+p {
+  color: orange;
+}
+article {
+  color: red;
+}
+article p {
+  color: blue;
+}
+article&gt;p {
+  color: green;
+}
+              </code></pre>
+            </p>
+          </section>
+
+          <section>
+            <iframe src="descendants3.html" style="height: 10em; width: 100%"></iframe>
+            <p>
               <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
 p {
   color: orange;
