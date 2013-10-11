@@ -25,6 +25,15 @@
       document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
     </script>
 
+    <style>
+      div.descendants p,
+      div.descendants div,
+      div.descendants article {
+        background-color: rgba(0,0,0,0.1);
+        padding: 5px;
+      }
+    </style>
+
     <!--[if lt IE 9]>
     <script src="lib/js/html5shiv.js"></script>
     <![endif]-->
@@ -91,8 +100,7 @@
 
           <section data-transition="none">
             <h2>Alltså sånt här</h2>
-            <p>
-              <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
+            <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
 &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
 &lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
@@ -116,14 +124,12 @@
     &lt;/div&gt;
   &lt;/body&gt;
 &lt;/html&gt;
-              </code></pre>
-            </p>
+            </code></pre>
           </section>
 
           <section data-transition="none">
             <h2>HTML &lt; 5</h2>
-            <p>
-              <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
+            <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
 &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
 &lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
@@ -147,8 +153,7 @@
     &lt;/div&gt;
   &lt;/body&gt;
 &lt;/html&gt;
-              </code></pre>
-            </p>
+            </code></pre>
 
             <aside class="notes">
               Såhär såg html ut förr i tiden.<br />
@@ -161,8 +166,7 @@
 
           <section data-transition="none">
             <h2>HTML &lt; 5</h2>
-            <p>
-              <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
+            <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
 &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
 &lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
@@ -186,8 +190,7 @@
     &lt;/div&gt;
   &lt;/body&gt;
 &lt;/html&gt;
-              </code></pre>
-            </p>
+            </code></pre>
 
             <aside class="notes">
               Massor av div:ar. Div:ar säger ingenting om innehållet.<br />
@@ -197,8 +200,7 @@
 
           <section data-transition="none">
             <h2>HTML &lt; 5</h2>
-            <p>
-              <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
+            <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
 &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
 &lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
@@ -222,8 +224,7 @@
     &lt;/div&gt;
   &lt;/body&gt;
 &lt;/html&gt;
-              </code></pre>
-            </p>
+            </code></pre>
 
             <aside class="notes">
               h1, ul, li och p är semantiska, åtminstone delvis.<br />
@@ -235,8 +236,7 @@
 
           <section data-transition="none">
             <h2>HTML &lt; 5</h2>
-            <p>
-              <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
+            <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
 &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
 &lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
@@ -260,8 +260,7 @@
     &lt;/div&gt;
   &lt;/body&gt;
 &lt;/html&gt;
-              </code></pre>
-            </p>
+            </code></pre>
 
             <aside class="notes">
               Mycket av "semantiken" finns i klassnamnen.<br />
@@ -271,8 +270,7 @@
 
           <section data-transition="none">
             <h2>HTML &lt; 5</h2>
-            <p>
-              <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
+            <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
 &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
 &lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
@@ -296,8 +294,7 @@
     &lt;/div&gt;
   &lt;/body&gt;
 &lt;/html&gt;
-              </code></pre>
-            </p>
+            </code></pre>
 
             <aside class="notes">
               Dessutom ser det oftare ut såhär i verkligheten.
@@ -310,8 +307,7 @@
 
           <section data-transition="none">
             <h2>HTML &lt; 5</h2>
-            <p>
-              <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
+            <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
 &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
 &lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
@@ -335,8 +331,7 @@
     &lt;/div&gt;
   &lt;/body&gt;
 &lt;/html&gt;
-              </code></pre>
-            </p>
+            </code></pre>
 
             <aside class="notes">
               HTML5 har fått ett antal nya taggar.<br />
@@ -348,8 +343,7 @@
 
           <section data-transition="none">
             <h2>HTML5</h2>
-            <p>
-              <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
+            <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;…&lt;/head&gt;
@@ -370,8 +364,7 @@
     &lt;/footer&gt;
   &lt;/body&gt;
 &lt;/html&gt;
-              </code></pre>
-            </p>
+            </code></pre>
 
             <aside class="notes">
               Mindre bös, mer kod.
@@ -380,8 +373,7 @@
 
           <section data-transition="none">
             <h2>HTML5</h2>
-            <p>
-              <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
+            <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
 &lt;!DOCTYPE html&gt; &lt;-- Ny kortare DOCTYPE, försätter alla webläsare i standard-mode
 &lt;html&gt;
   &lt;head&gt;…&lt;/head&gt;
@@ -402,8 +394,7 @@
     &lt;/footer&gt;
   &lt;/body&gt;
 &lt;/html&gt;
-              </code></pre>
-            </p>
+            </code></pre>
 
             <aside class="notes">
               Ny kortare DOCTYPE, försätter alla webläsare i standard-mode<br />
@@ -413,8 +404,7 @@
 
           <section data-transition="none">
             <h2>HTML5</h2>
-            <p>
-              <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
+            <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;…&lt;/head&gt;
@@ -435,8 +425,7 @@
     &lt;/footer&gt;
   &lt;/body&gt;
 &lt;/html&gt;
-              </code></pre>
-            </p>
+            </code></pre>
 
             <aside class="notes">
               <b>header</b><br />
@@ -446,8 +435,7 @@
 
           <section data-transition="none">
             <h2>HTML5</h2>
-            <p>
-              <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
+            <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;…&lt;/head&gt;
@@ -468,8 +456,7 @@
     &lt;/footer&gt;
   &lt;/body&gt;
 &lt;/html&gt;
-              </code></pre>
-            </p>
+            </code></pre>
 
             <aside class="notes">
               <b>nav</b><br />
@@ -480,8 +467,7 @@
 
           <section data-transition="none">
             <h2>HTML5</h2>
-            <p>
-              <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
+            <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;…&lt;/head&gt;
@@ -502,8 +488,7 @@
     &lt;/footer&gt;
   &lt;/body&gt;
 &lt;/html&gt;
-              </code></pre>
-            </p>
+            </code></pre>
 
             <aside class="notes">
               <b>section</b><br />
@@ -513,8 +498,7 @@
 
           <section data-transition="none">
             <h2>HTML5</h2>
-            <p>
-              <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
+            <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;…&lt;/head&gt;
@@ -535,8 +519,7 @@
     &lt;/footer&gt;
   &lt;/body&gt;
 &lt;/html&gt;
-              </code></pre>
-            </p>
+            </code></pre>
 
             <aside class="notes">
               <b>article</b><br />
@@ -546,8 +529,7 @@
 
           <section data-transition="none">
             <h2>HTML5</h2>
-            <p>
-              <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
+            <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;…&lt;/head&gt;
@@ -568,8 +550,7 @@
     &lt;/footer&gt;
   &lt;/body&gt;
 &lt;/html&gt;
-              </code></pre>
-            </p>
+            </code></pre>
 
             <aside class="notes">
               <b>footer</b><br />
@@ -580,8 +561,7 @@
 
           <section data-transition="none">
             <h2>HTML5</h2>
-            <p>
-              <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
+            <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;…&lt;/head&gt;
@@ -602,8 +582,7 @@
     &lt;/footer&gt;
   &lt;/body&gt;
 &lt;/html&gt;
-              </code></pre>
-            </p>
+            </code></pre>
 
             <aside class="notes">
               <b>small</b><br />
@@ -620,8 +599,7 @@
 
           <section data-transition="none">
             <h2>section</h2>
-            <p>
-              <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
+            <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
 &lt;section&gt; &lt;--
   &lt;h1&gt;Mina senaste blogg-poster&lt;/h1&gt;
 
@@ -643,8 +621,7 @@
   &lt;/article&gt;
 
 &lt;/section&gt;
-              </code></pre>
-            </p>
+            </code></pre>
 
             <aside class="notes">
               Section används för att dela upp innehållet i logiska enheter.<br />
@@ -654,8 +631,7 @@
 
           <section data-transition="none">
             <h2>article</h2>
-            <p>
-              <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
+            <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
 &lt;section&gt;
   &lt;h1&gt;Mina senaste blogg-poster&lt;/h1&gt;
 
@@ -677,8 +653,7 @@
   &lt;/article&gt;
 
 &lt;/section&gt;
-              </code></pre>
-            </p>
+            </code></pre>
 
             <aside class="notes">
               Om en del skulle kunna publiceras fristående, bör <em>article</em> användas.<br />
@@ -689,8 +664,7 @@
 
           <section data-transition="none">
             <h2>Rubriker!</h2>
-            <p>
-              <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
+            <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
 &lt;section&gt;
   &lt;h1&gt;Mina senaste blogg-poster&lt;/h1&gt; &lt;--
 
@@ -712,8 +686,7 @@
   &lt;/article&gt;
 
 &lt;/section&gt;
-              </code></pre>
-            </p>
+            </code></pre>
 
             <aside class="notes">
               Rubriker:<br />
@@ -729,8 +702,7 @@
 
           <section>
             <h2>Rubriker och underrubriker</h2>
-            <p>
-              <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
+            <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
 &lt;article&gt;
   &lt;header&gt;
     &lt;h1&gt;Rubrik&lt;/h1&gt;
@@ -739,8 +711,7 @@
 
   Artikelns innehåll här…
 &lt;/article&gt;
-              </code></pre>
-            </p>
+            </code></pre>
 
             <aside class="notes">
               Vill man "bunta ihop" rubriker och underrubriker kan det finnas anledning att använda både h1 och h2.<br />
@@ -750,8 +721,7 @@
 
           <section>
             <h2>Rubriker och underrubriker</h2>
-            <p>
-              <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
+            <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
 &lt;article&gt;
   &lt;header&gt;
     &lt;h1&gt;Rubrik&lt;/h1&gt;
@@ -760,10 +730,8 @@
 
   Artikelns innehåll här…
 &lt;/article&gt;
-              </code></pre>
-            </p>
-            <p>
-              <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
+            </code></pre>
+            <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
 &lt;article&gt;
   &lt;h1&gt;Artikel-rubrik&lt;/h1&gt;
 
@@ -777,8 +745,7 @@
     text
   &lt;/section&gt;
 &lt;/article&gt;
-              </code></pre>
-            </p>
+            </code></pre>
 
             <aside class="notes">
               Observera skillnaden!
@@ -835,11 +802,9 @@
 
         <section>
           <h2>Inga inline-styles</h2>
-          <p>
-            <pre><code data-trim contenteditable style="margin-top: 20px;">
+          <pre><code data-trim contenteditable style="margin-top: 20px;">
 &lt;article style="color: blue;"&gt;
-            </code></pre>
-          </p>
+          </code></pre>
 
           <aside class="notes">
             Inline-styles, motverkar hela poängen med CSS, att stajling ska vara återanvändbar.<br />
@@ -854,16 +819,14 @@
 
           <section data-transition="none">
             <h2>Inga klassnamn som beskriver hur elementet ser ut</h2>
-            <p>
-              <pre><code data-trim contenteditable style="margin-top: 20px;">
+            <pre><code data-trim contenteditable style="margin-top: 20px;">
 &lt;article class="blue-text"&gt;
-              </code></pre>
-              <pre><code data-trim contenteditable style="margin-top: 20px;">
+            </code></pre>
+            <pre><code data-trim contenteditable style="margin-top: 20px;">
 .blue-text {
   color: blue;
 }
-              </code></pre>
-            </p>
+            </code></pre>
 
             <aside class="notes">
               Någon som kan se ett problem med detta?
@@ -872,30 +835,26 @@
 
           <section data-transition="none">
             <h2>Inga klassnamn som beskriver hur elementet ser ut</h2>
-            <p>
-              <pre><code data-trim contenteditable style="margin-top: 20px;">
+            <pre><code data-trim contenteditable style="margin-top: 20px;">
 &lt;article class="blue-text"&gt;
-              </code></pre>
+            </code></pre>
               <pre><code data-trim contenteditable style="margin-top: 20px;">
 .blue-text {
   color: green;
 }
-              </code></pre>
-            </p>
+            </code></pre>
           </section>
 
           <section data-transition="none">
             <h2>Klassnamn ska beskriva vad objektet är</h2>
-            <p>
-              <pre><code data-trim contenteditable style="margin-top: 20px;">
+            <pre><code data-trim contenteditable style="margin-top: 20px;">
 &lt;article class="featured-post"&gt;
-              </code></pre>
-              <pre><code data-trim contenteditable style="margin-top: 20px;">
+            </code></pre>
+            <pre><code data-trim contenteditable style="margin-top: 20px;">
 .featured-post {
   color: blue;
 }
-              </code></pre>
-            </p>
+            </code></pre>
           </section>
 
         </section>
@@ -912,16 +871,14 @@
 
         <section>
           <h2>Sky !important som pesten!</h2>
-          <p>
-            <pre><code data-trim contenteditable style="margin-top: 20px;">
+          <pre><code data-trim contenteditable style="margin-top: 20px;">
 &lt;article class="featured-post"&gt;
-            </code></pre>
-            <pre><code data-trim contenteditable style="margin-top: 20px;">
+          </code></pre>
+          <pre><code data-trim contenteditable style="margin-top: 20px;">
 .featured-post {
   color: blue !important;
 }
-            </code></pre>
-          </p>
+          </code></pre>
 
           <aside class="notes">
             !important är ett tecken på väldigt allvarliga problem med er CSS.<br />
@@ -943,12 +900,11 @@
 
           <section>
             <h2>CSS-selektorer</h2>
-            <p>
-              <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
+            <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
 &lt;article class="classname-1 classname-2" id="unique-id"&gt;
-              </code></pre>
+            </code></pre>
 
-              <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
+            <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
 article {
   color: red;
 }
@@ -964,8 +920,7 @@ article.classname-2 {
 #unique-id {
   color: orange;
 }
-              </code></pre>
-            </p>
+            </code></pre>
 
             <aside class="notes">
               Varje selektor har här en högre specificitet än föregående selektor.<br />
@@ -974,26 +929,23 @@ article.classname-2 {
           </section>
 
           <section>
-            <p>
-              <pre><code data-trim contenteditable style="margin-top: 20px;">
+            <pre><code data-trim contenteditable style="margin-top: 20px;">
 &lt;article class="classname-1 classname-2" id="unique-id"&gt;
-              </code></pre>
+            </code></pre>
 
-              <ol>
-                <li class="fragment"><em>#id</em> är mest värt</li>
-                <li class="fragment"><em>.class</em> är värt mindre än id</li>
-                <li class="fragment"><em>element</em> är minst värt</li>
-              </ol>
-            </p>
+            <ol>
+              <li class="fragment"><em>#id</em> är mest värt</li>
+              <li class="fragment"><em>.class</em> är värt mindre än id</li>
+              <li class="fragment"><em>element</em> är minst värt</li>
+            </ol>
           </section>
 
           <section>
-            <p>
-              <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
+            <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
 &lt;article class="classname-1 classname-2" id="unique-id"&gt;
-              </code></pre>
+            </code></pre>
 
-              <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
+            <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
 article { &lt;-- 0.0.1
   color: red;
 }
@@ -1009,8 +961,7 @@ article.classname-2 { &lt;-- 0.1.1
 #unique-id { &lt;-- 1.0.0
   color: orange;
 }
-              </code></pre>
-            </p>
+            </code></pre>
 
             <aside class="notes">
               Poängen räknas inte ihop!
@@ -1026,26 +977,17 @@ article.classname-2 { &lt;-- 0.1.1
           </section>
 
           <section>
-            <div id="descendants-1" style="background-color: white; margin-left: auto; margin-right: auto; padding: 30px; width: 84%; text-align: left; font-size: 14px; color: black;"></div>
+            <div id="descendants-1" class="descendants" style="background-color: white; margin-left: auto; margin-right: auto; padding: 30px; width: 84%; text-align: left; font-size: 14px; color: black;"></div>
             <pre><code data-trim contenteditable class="liveCoding xml" data-livecoding-id="descendants-1" style="font-size: 14px; line-height: 18px; margin-top: 20px;">
-&lt;p&gt;
-  p
-&lt;/p&gt;
-
+&lt;p&gt;p&lt;/p&gt;
 &lt;article&gt;
   article
+  &lt;p&gt;p&lt;/p&gt;
 
-  &lt;p&gt;
-    p
-  &lt;/p&gt;
-
-  &lt;section&gt;
-    section
-
-    &lt;p&gt;
-      p
-    &lt;/p&gt;
-  &lt;/section&gt;
+  &lt;div&gt;
+    div
+    &lt;p&gt;p&lt;/p&gt;
+  &lt;/div&gt;
 &lt;/article&gt;
             </code></pre>
             <pre><code data-trim contenteditable class="liveCoding css" data-livecoding-id="descendants-1" style="font-size: 14px; line-height: 18px; margin-top: 20px;">
@@ -1063,26 +1005,17 @@ article {
           </section>
 
           <section>
-            <div id="descendants-2" style="background-color: white; margin-left: auto; margin-right: auto; padding: 30px; width: 84%; text-align: left; font-size: 14px;"></div>
+            <div id="descendants-2" class="descendants" style="background-color: white; margin-left: auto; margin-right: auto; padding: 30px; width: 84%; text-align: left; font-size: 14px;"></div>
             <pre><code data-trim contenteditable class="liveCoding xml" data-livecoding-id="descendants-2" style="font-size: 14px; line-height: 18px; margin-top: 20px;">
-&lt;p&gt;
-  p
-&lt;/p&gt;
-
+&lt;p&gt;p&lt;/p&gt;
 &lt;article&gt;
   article
+  &lt;p&gt;p&lt;/p&gt;
 
-  &lt;p&gt;
-    p
-  &lt;/p&gt;
-
-  &lt;section&gt;
-    section
-
-    &lt;p&gt;
-      p
-    &lt;/p&gt;
-  &lt;/section&gt;
+  &lt;div&gt;
+    div
+    &lt;p&gt;p&lt;/p&gt;
+  &lt;/div&gt;
 &lt;/article&gt;
             </code></pre>
             <pre><code data-trim contenteditable class="liveCoding css" data-livecoding-id="descendants-2" style="font-size: 14px; line-height: 18px; margin-top: 20px;">
@@ -1104,26 +1037,17 @@ article p {
           </section>
 
           <section>
-            <div id="descendants-3" style="background-color: white; margin-left: auto; margin-right: auto; padding: 30px; width: 84%; text-align: left; font-size: 14px;"></div>
+            <div id="descendants-3" class="descendants" style="background-color: white; margin-left: auto; margin-right: auto; padding: 30px; width: 84%; text-align: left; font-size: 14px;"></div>
             <pre><code data-trim contenteditable class="liveCoding xml" data-livecoding-id="descendants-3" style="font-size: 14px; line-height: 18px; margin-top: 20px;">
-&lt;p&gt;
-  p
-&lt;/p&gt;
-
+&lt;p&gt;p&lt;/p&gt;
 &lt;article&gt;
   article
+  &lt;p&gt;p&lt;/p&gt;
 
-  &lt;p&gt;
-    p
-  &lt;/p&gt;
-
-  &lt;section&gt;
-    section
-
-    &lt;p&gt;
-      p
-    &lt;/p&gt;
-  &lt;/section&gt;
+  &lt;div&gt;
+    div
+    &lt;p&gt;p&lt;/p&gt;
+  &lt;/div&gt;
 &lt;/article&gt;
             </code></pre>
             <pre><code data-trim contenteditable class="liveCoding css" data-livecoding-id="descendants-3" style="font-size: 14px; line-height: 18px; margin-top: 20px;">
@@ -1144,13 +1068,11 @@ article&gt;p {
 
           <section>
             <h2>&gt; ?</h2>
-            <p>
-              <pre><code data-trim contenteditable style="margin-top: 20px;">
+            <pre><code data-trim contenteditable style="margin-top: 20px;">
 article&gt;p {
   color: green;
 }
-              </code></pre>
-            </p>
+            </code></pre>
 
             <aside class="notes">
               Större-än-tecknet matchar "direct descendants".<br />
@@ -1201,8 +1123,7 @@ article p {}
           </section>
 
           <section>
-            <p>
-              <pre><code data-trim contenteditable style="margin-top: 20px;">
+            <pre><code data-trim contenteditable style="margin-top: 20px;">
 &lt;nav class="mainmenu"&gt;
   &lt;ul class="toplevel"&gt;
     &lt;li&gt;
@@ -1210,16 +1131,15 @@ article p {}
     &lt;/li&gt;
   &lt;/ul&gt;
 &lt;/nav&gt;
-              </code></pre>
-              <pre><code data-trim contenteditable style="margin-top: 20px;">
+            </code></pre>
+            <pre><code data-trim contenteditable style="margin-top: 20px;">
 nav.mainmenu>ul.toplevel>li>a {
   color: red;
 }
 a.button {
   color: black;
 }
-              </code></pre>
-            </p>
+            </code></pre>
 
             <aside class="notes">
               Vilken färg får texten?<br />
@@ -1231,8 +1151,7 @@ a.button {
           </section>
 
           <section>
-            <p>
-              <pre><code data-trim contenteditable style="margin-top: 20px;">
+            <pre><code data-trim contenteditable style="margin-top: 20px;">
 &lt;nav class="mainmenu"&gt;
   &lt;ul class="toplevel"&gt;
     &lt;li&gt;
@@ -1240,16 +1159,15 @@ a.button {
     &lt;/li&gt;
   &lt;/ul&gt;
 &lt;/nav&gt;
-              </code></pre>
-              <pre><code data-trim contenteditable style="margin-top: 20px;">
+            </code></pre>
+            <pre><code data-trim contenteditable style="margin-top: 20px;">
 nav.mainmenu a.menu-link {
   color: red;
 }
 a.button {
   color: black;
 }
-              </code></pre>
-            </p>
+            </code></pre>
 
             <aside class="notes">
               Den övre selektorn har högre specificitet, men den matchar inte knappen på grund av att klassen inte stämmer.
@@ -1266,21 +1184,138 @@ a.button {
 
           <section>
             <h2>border-radius</h2>
-            <p>
-              <div id="border-radius-1" style="background-color: white; margin-left: auto; margin-right: auto; padding: 30px; width: 84%; text-align: center;"></div>
-              <pre><code data-trim contenteditable class="liveCoding xml" data-livecoding-id="border-radius-1" style="margin-top: 20px;">
+            <div id="border-radius-1" style="background-color: white; margin-left: auto; margin-right: auto; padding: 30px; width: 84%; text-align: center;"></div>
+            <pre><code data-trim contenteditable class="liveCoding xml" data-livecoding-id="border-radius-1" style="margin-top: 20px;">
 <div class="button">text</div>
-              </code></pre>
-              <pre><code data-trim contenteditable class="liveCoding css" data-livecoding-id="border-radius-1" style="margin-top: 20px;">
+            </code></pre>
+            <pre><code data-trim contenteditable class="liveCoding css" data-livecoding-id="border-radius-1" style="margin-top: 20px;">
 .button {
-  background-color: green;
   border-radius: 10px;
+
+  background-color: green;
   color: orange;
   display: inline-block;
   padding: 5px 10px;
 }
-              </code></pre>
-            </p>
+            </code></pre>
+          </section>
+
+          <section>
+            <h2>box-shadow</h2>
+            <div id="box-shadow-1" style="background-color: white; margin-left: auto; margin-right: auto; padding: 30px; width: 84%; text-align: center;"></div>
+            <pre><code data-trim contenteditable class="liveCoding xml" data-livecoding-id="box-shadow-1" style="margin-top: 20px;">
+<div class="button">text</div>
+            </code></pre>
+            <pre><code data-trim contenteditable class="liveCoding css" data-livecoding-id="box-shadow-1" style="margin-top: 20px;">
+.button {
+  box-shadow: 3px 3px 10px 0 grey;
+
+  background-color: green;
+  color: orange;
+  display: inline-block;
+  padding: 5px 10px;
+}
+            </code></pre>
+          </section>
+
+          <section>
+            <h2>gradient</h2>
+            <div id="gradient-1" style="background-color: white; margin-left: auto; margin-right: auto; padding: 30px; width: 84%; text-align: center;"></div>
+            <pre><code data-trim contenteditable class="liveCoding xml" data-livecoding-id="gradient-1" style="margin-top: 20px;">
+<div class="button">text</div>
+            </code></pre>
+            <pre><code data-trim contenteditable class="liveCoding css" data-livecoding-id="gradient-1" style="margin-top: 20px;">
+.button {
+  background-image: linear-gradient(to bottom, green 0%, aqua 80%);
+
+  background-color: red;
+  color: transparent;
+  display: inline-block;
+  padding: 5px 10px;
+}
+            </code></pre>
+          </section>
+
+          <section>
+            <h2>text-shadow</h2>
+            <div id="text-shadow-1" style="background-color: white; margin-left: auto; margin-right: auto; padding: 30px; width: 84%; text-align: center;"></div>
+            <pre><code data-trim contenteditable class="liveCoding xml" data-livecoding-id="text-shadow-1" style="margin-top: 20px;">
+<div class="button">text</div>
+            </code></pre>
+            <pre><code data-trim contenteditable class="liveCoding css" data-livecoding-id="text-shadow-1" style="margin-top: 20px;">
+.button {
+  text-shadow: 4px 4px 2px black;
+
+  background-color: green;
+  color: orange;
+  display: inline-block;
+  padding: 5px 10px;
+}
+          </code></pre>
+          </section>
+
+          <section>
+            <div id="example-button-1" style="background-color: #cccccc; margin-left: auto; margin-right: auto; padding: 30px; width: 84%; text-align: center;"></div>
+            <pre><code data-trim contenteditable class="liveCoding xml" data-livecoding-id="example-button-1" style="margin-top: 20px;">
+<a href="#/19/5" class="button">text</a>
+            </code></pre>
+            <pre><code data-trim contenteditable class="liveCoding css" data-livecoding-id="example-button-1" style="margin-top: 20px;">
+.button {
+  background-color: #555555;
+  background-image: linear-gradient(to bottom, #cccccc 0%, #dddddd 50%, #cccccc 100%);
+  border: 1px solid #aaaaaa;
+  border-radius: 4px;
+  color: #bbbbbb;
+  display: inline-block;
+  padding: 5px 10px;
+  text-shadow: 0 2px 0 #eeeeee, 0 -2px 0 #999999;
+}
+  .button:active{
+  background-image: linear-gradient(to bottom, #c3c3c3 0%, #d3d3d3 50%, #c3c3c3 100%);
+  box-shadow: inset 0 -4px 2px -2px #cccccc, inset 0 8px 4px -4px #bfbfbf;
+  color: #b3b3b3;
+  text-shadow: 0 2px 0 #e3e3e3, 0 -2px 0 #939393;
+}
+            </code></pre>
+          </section>
+
+        </section>
+        <section>
+
+          <section>
+            <h2>CSS-trianglar</h2>
+
+            <aside class="notes">
+              Vi kan göra rektanglar, och med border-radius kan vi även göra cirklar, men trianglar kan också vara rätt bra att ha ibland.<br />
+              Det går också att ordna med css.
+            </aside>
+          </section>
+
+          <section data-transition="fade">
+            <div id="triangle-box" style="
+              background-color: white;
+              background-clip: padding-box;
+              border-color: red;
+              border-style: solid;
+              border-width: 0;
+              display: inline-block;
+              height: 50px;
+              width: 50px;
+              transition-property: all;
+              transition-duration: 1s;
+            "></div>
+            <span class="fragment" id="triangle-fragment-1"></span>
+            <span class="fragment" id="triangle-fragment-2"></span>
+            <span class="fragment" id="triangle-fragment-3"></span>
+            <span class="fragment" id="triangle-fragment-4"></span>
+
+            <aside class="notes">
+              1. Börja med en kvadrat.<br />
+              2. Sätt en border.<br />
+              3. Om man sätter olika färg på varje sida ser man hur de möts i en diagonal i hörnen.<br />
+              4. Sätt kvadratens höjd och bredd till 0.<br />
+              5. Sätt border-color till transparent på 3 av sidorna.
+            </aside>
           </section>
 
         </section>
@@ -1318,8 +1353,53 @@ a.button {
       });
 
       Reveal.addEventListener('fragmentshown', function(event){
+        var element;
         if (event.fragment.id === 'important-2') {
           document.getElementById('important-1').style.textDecoration = 'line-through';
+        }
+        else if (event.fragment.id === 'triangle-fragment-1') {
+          document.getElementById('triangle-box').style['border-width'] = '30px';
+        }
+        else if (event.fragment.id === 'triangle-fragment-2') {
+          element = document.getElementById('triangle-box');
+          element.style['border-left-color'] = 'green';
+          element.style['border-right-color'] = 'blue';
+          element.style['border-top-color'] = 'yellow';
+        }
+        else if (event.fragment.id === 'triangle-fragment-3') {
+          element = document.getElementById('triangle-box');
+          element.style.height = '0';
+          element.style.width = '0';
+        }
+        else if (event.fragment.id === 'triangle-fragment-4') {
+          element = document.getElementById('triangle-box');
+          element.style['border-left-color'] = 'transparent';
+          element.style['border-right-color'] = 'transparent';
+          element.style['border-top-color'] = 'transparent';
+        }
+      });
+
+      Reveal.addEventListener('fragmenthidden', function(event){
+        var element;
+        if (event.fragment.id === 'important-2') {
+          document.getElementById('important-1').style.textDecoration = 'none';
+        }
+        else if (event.fragment.id === 'triangle-fragment-1') {
+          document.getElementById('triangle-box').style['border-width'] = '0';
+        }
+        else if (event.fragment.id === 'triangle-fragment-2') {
+          document.getElementById('triangle-box').style['border-color'] = 'red';
+        }
+        else if (event.fragment.id === 'triangle-fragment-3') {
+          element = document.getElementById('triangle-box');
+          element.style.height = '50px';
+          element.style.width = '50px';
+        }
+        else if (event.fragment.id === 'triangle-fragment-4') {
+          element = document.getElementById('triangle-box');
+          element.style['border-left-color'] = 'green';
+          element.style['border-right-color'] = 'blue';
+          element.style['border-top-color'] = 'yellow';
         }
       });
 
