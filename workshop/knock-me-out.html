@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Knock Me Out!</title>
+	<link rel="stylesheet" href="styleme.css">
+	<script src='knockout-3.0.0.js'></script>
+</head>
+<body>
+
+	<header class="site-header">
+		<h1>Knock Me Out!</h1>
+		<h2>A place of practise…</h2>
+	</header>
+	<nav class="site-nav">
+		<a href="#" class="menu-item">Page 1</a>
+		<a href="#" class="menu-item current-page">Page 2</a>
+		<a href="#" class="menu-item">Page 3</a>
+		<a href="#" class="menu-item">Page 4</a>
+	</nav>
+
+	<div class="main-content">
+		 <article class="post article featured">
+		 	<article class="post-content">
+		 		<h1>My thoughts on adding smoking hot interactivity to HTML5</h1>
+		 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel rutrum felis, nec consequat lectus. Curabitur quis nisi eu est cursus commodo quis in risus.</p>
+	 			<p>Maecenas ac nisl quis sapien tristique rutrum. Aliquam ornare nunc et sem gravida, placerat aliquet mi fermentum. Ut convallis id odio ut ornare. Fusce eget sodales odio. Mauris diam enim, aliquet id purus laoreet, congue pretium lacus. Nulla gravida leo non ante dapibus gravida. Nam hendrerit diam sit amet consectetur eleifend. Donec nec odio vitae nulla gravida sodales adipiscing vitae turpis. Etiam ultrices, dolor non pulvinar blandit, nisi augue rutrum velit, sit amet interdum metus sem sit amet eros. Nam egestas orci ornare erat commodo facilisis. Aenean sapien tellus, eleifend sed nunc viverra, malesuada sagittis velit. Suspendisse potenti.</p>
+	 			<section>
+	 				<h1>Observables</h1>
+	 				<p>Pellentesque velit ipsum, mattis sed elit id, commodo pulvinar metus. Duis dignissim vel ligula non ornare. Quisque luctus elementum leo, ut mollis eros tincidunt at. Integer tempor a mi id accumsan. Duis dolor erat, facilisis eu condimentum nec, dignissim nec erat. Quisque laoreet dictum cursus. Duis hendrerit purus at urna feugiat, quis aliquet est dapibus. Fusce volutpat tristique libero, in molestie felis congue non. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam tristique condimentum nibh et mattis. Nullam malesuada libero dolor, ac ullamcorper neque tristique in.</p>
+	 			</section>
+	 			<section>
+	 				<h1>Data-bindings</h1>
+	 				<p>Proin auctor et enim in tristique. Aenean vel tempor tortor. Maecenas volutpat erat elit, eget lobortis libero scelerisque dapibus. Donec rutrum odio eu augue rhoncus, quis varius nisl convallis. Vivamus vehicula, neque vitae faucibus dignissim, libero est consectetur neque, sed vulputate urna mauris et massa. Integer orci nisi, vehicula eu arcu quis, pellentesque sagittis orci. Vestibulum iaculis odio malesuada orci tincidunt, eget egestas odio blandit. Duis eros diam, sodales et nibh sit amet, sagittis lobortis lorem.</p>
+	 				<p>
+	 					<figure>
+	 						<img src="html5_structure.png" alt="The structure of HTML5" />
+	 						<figcaption>
+	 							A visual representation of the semantic layout of an HTML5 document.
+	 							<small>Image from <a href="http://coding.smashingmagazine.com/2009/07/16/html5-and-the-future-of-the-web/" target="_blank">Smashing Magazine</a></small>
+	 						</figcaption>
+	 					</figure>
+	 					Pellentesque tellus arcu, tincidunt a faucibus tincidunt, ullamcorper ut risus. Nulla facilisi. Integer tristique id libero ac feugiat. Quisque in nisi odio. Nam varius vitae est at ullamcorper. Sed dictum sapien et rhoncus mollis. Aliquam nec vestibulum turpis, mattis hendrerit risus. Nunc ac sapien in neque accumsan congue. Vivamus varius elementum tellus non facilisis. Mauris et luctus leo. Donec sollicitudin erat aliquam justo elementum placerat. Aenean fringilla erat nunc, ac condimentum odio tristique id. Quisque imperdiet lorem sit amet sem scelerisque, a posuere sapien bibendum. Quisque sit amet faucibus odio, nec consectetur nisi. Etiam iaculis non libero eu vulputate. Vivamus ac viverra tellus.
+	 				</p>
+	 			</section>
+	 			<footer>
+	 				Published <time datetime="2013-10-16 09:44">16/10</time> by <a href="#">Alejandro</a>
+	 			</footer>
+		 	</article>
+		 	<section class="post-comments">
+		 		<article class="comment">
+		 			<h1>Adrian wrote:</h1>
+		 			<p data-bind="text: comment"></p>
+		 			<time datetime="2013-10-16 09:54">Yesterday</time>
+		 		</article>
+		 	</section>
+		 </article>
+
+		 <article class="post notice">
+		 </article>
+
+		 <article class="post image">
+		 </article>
+	</div>
+
+	<footer class="site-footer">
+		<small class="site-copyright">
+			© 2013 Lundalogik AB
+		</small>
+		<nav class="corporate-sites">
+			<a href="http://www.lundalogik.se/" class="menu-item">Lundalogik AB</a>
+			<a href="http://www.lundalogik.se/crm-system/lime-easy/" class="menu-item">LIME Easy</a>
+			<a href="http://www.lundalogik.se/crm-system/lime-pro/" class="menu-item">LIME Pro</a>
+			<a href="http://www.lime-go.com/se/" class="menu-item">LIME Go</a>
+		</nav>
+	</footer>
+
+	<script src='knock-me-out.js'></script>
+</body>
+</html>

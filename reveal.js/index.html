@@ -53,7 +53,7 @@
         <section>
           <h2>Vad är HTML5?</h2>
           <p class="fragment">
-            <img src="html5-superman.jpg" />
+            <img src="html5-superman.jpg" style="max-height: 60%;" />
           </p>
           <p class="fragment">
             ?
@@ -64,21 +64,21 @@
           <section data-transition="none">
             <h2>Snarare detta</h2>
             <p>
-              <img src="HTML5-APIs-and-related-technologies-by-Sergey-Mavrody-2011.png" />
+              <img src="HTML5-APIs-and-related-technologies-by-Sergey-Mavrody-2011.png" style="max-height: 70%;" />
             </p>
             <p>December 2011</p>
           </section>
           <section data-transition="none">
             <h2>Ursäkta, detta</h2>
             <p>
-              <img src="HTML5-APIs-and-related-technologies-by-Sergey-Mavrody-2012.png" />
+              <img src="HTML5-APIs-and-related-technologies-by-Sergey-Mavrody-2012.png" style="max-height: 70%;" />
             </p>
             <p>20:e december 2012</p>
           </section>
           <section data-transition="none">
             <h2>Err…</h2>
             <p>
-              <img src="HTML5-APIs-and-related-technologies-by-Sergey-Mavrody-2013.png" />
+              <img src="HTML5-APIs-and-related-technologies-by-Sergey-Mavrody-2013.png" style="max-height: 70%;" />
             </p>
             <p>20:e januari 2013</p>
 
@@ -757,7 +757,7 @@
         <section>
 
           <section>
-            <h2>Endast div, p och h1 - ingen stajling</h2>
+            <h2>Endast div, h1 och p - ingen stajling</h2>
             <iframe src="non-semantic.html" style="width: 100%; height: 400px;"></iframe>
           </section>
 
@@ -807,8 +807,8 @@
           </code></pre>
 
           <aside class="notes">
-            Inline-styles, motverkar hela poängen med CSS, att stajling ska vara återanvändbar.<br />
-            Alla element som är av samma typ och ser likadana ut, så man kan också kunna ändra utseende på på ett och samma ställe.<br />
+            Inline-styles motverkar hela poängen med CSS; att stajling ska vara återanvändbar.<br />
+            Alla element som är av samma typ och ser likadana ut, ska man kunna ändra utseende på, på ett och samma ställe.<br />
             Ingen search-and-replace ska behövas.<br />
             <br />
             Inline-styles går aldrig att skriva över från ett style-sheet!
@@ -949,7 +949,7 @@ article.classname-2 {
 article { &lt;-- 0.0.1
   color: red;
 }
-classname-1 { &lt;-- 0.1.0
+.classname-1 { &lt;-- 0.1.0
   color: blue;
 }
 article.classname-2 { &lt;-- 0.1.1
@@ -1082,6 +1082,36 @@ article&gt;p {
           </section>
 
           <section>
+            <div id="descendants-4" class="descendants" style="background-color: white; margin-left: auto; margin-right: auto; padding: 30px; width: 84%; text-align: left; font-size: 14px;"></div>
+            <pre><code data-trim contenteditable class="liveCoding xml" data-livecoding-id="descendants-4" style="font-size: 14px; line-height: 18px; margin-top: 20px;">
+&lt;p&gt;p&lt;/p&gt;
+&lt;article&gt;
+  article
+  &lt;p&gt;p&lt;/p&gt;
+
+  &lt;div&gt;
+    div
+    &lt;p&gt;p&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/article&gt;
+            </code></pre>
+            <pre><code data-trim contenteditable class="liveCoding css" data-livecoding-id="descendants-4" style="font-size: 14px; line-height: 18px; margin-top: 20px;">
+p {
+  color: orange;
+}
+article {
+  color: red;
+}
+article p {
+  color: blue;
+}
+article&gt;p {
+  color: green;
+}
+            </code></pre>
+          </section>
+
+          <section>
             <h2>Performance</h2>
             <pre><code data-trim contenteditable style="margin-top: 20px;">
 article p {}
@@ -1146,7 +1176,9 @@ a.button {
               Varför?<br />
               <br />
               Sammanlagt har selektorn hög specificitet, men längst åt höger är den generell.<br />
-              Det blir svårt att skriva över utan att använda !important.
+              Det blir svårt att skriva över utan att använda !important.<br />
+              <br />
+              Så vad bör man göra istället?
             </aside>
           </section>
 
@@ -1270,7 +1302,7 @@ a.button {
   padding: 5px 10px;
   text-shadow: 0 2px 0 #eeeeee, 0 -2px 0 #999999;
 }
-  .button:active{
+.button:active {
   background-image: linear-gradient(to bottom, #c3c3c3 0%, #d3d3d3 50%, #c3c3c3 100%);
   box-shadow: inset 0 -4px 2px -2px #cccccc, inset 0 8px 4px -4px #bfbfbf;
   color: #b3b3b3;
@@ -1318,6 +1350,10 @@ a.button {
             </aside>
           </section>
 
+        </section>
+
+        <section>
+          <h1>Tack</h1>
         </section>
 
       </div>
