@@ -5,6 +5,7 @@ Ko for fun and profit
 ---------------------
 Vad kan man göra med knockout?
 
+Följande blir enklare:
 - Uppdateringar i gui
 - Uppdateringar i modell
 - Trigga eventhanterare meck
