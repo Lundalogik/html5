@@ -3,13 +3,12 @@ Birds eye view
 
 Ko for fun and profit
 ---------------------
-Vad kan man göra med knockout?
+Vad kan man göra med knockout [knockoutjs.com]?
 
 Följande blir enklare:
 - Uppdateringar i gui
-- Uppdateringar i modell
-- Trigga eventhanterare meck
-- Binda event hanterare meck
+- Uppdateringar i på dina tabeller
+- Trigga vid click meck
 
 Behöver jag fortfarande JQuery?
 -------------------------------
@@ -17,22 +16,22 @@ Behöver jag fortfarande JQuery?
 - Ja! JQuery är fortfarande awesome! 
 - Simpel html + lite jquery är snabbare än att göra single page app.
 
-ES5
----
-Stöd för bättre programmering. Säg level 10+
+Nästa version av javascript som stöds av de flesta (ES5)
+-------------------------------------------------------
+Bättre programmering för kodninjor.
 
 Det funkar inte!
 ----------------
 
-- Jshint/jslint (finns i editor o online)
-- Fiddler
+- Jshint (finns i editor o online) [http://www.jshint.com/]
+- Fiddler [http://fiddler2.com/]
 - Webbläsare
 
 Choose your own advendure (object orientation)
 ----------------------------------------------
 
-Level 1
--------
+Enklast möjligt
+---------------
 
     var ConstructorFunction = function(values){
         var self = this;
@@ -46,8 +45,8 @@ Level 1
         };
     }
 
-Level 20+
----------
+Kodninja
+--------
 
 - Prototype
 - Mixed
