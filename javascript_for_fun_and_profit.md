@@ -1,8 +1,7 @@
-Birds eye view
-==============
+# Birds eye view
 
-Ko for fun and profit
----------------------
+## Ko for fun and profit
+
 Vad kan man göra med knockout [knockoutjs.com]?
 
 Följande blir enklare:
@@ -10,28 +9,24 @@ Följande blir enklare:
 - Uppdateringar i på dina tabeller
 - Trigga vid click meck
 
-Behöver jag fortfarande JQuery?
--------------------------------
+## Behöver jag fortfarande JQuery?
 
 - Ja! JQuery är fortfarande awesome! 
 - Simpel html + lite jquery är snabbare än att göra single page app.
 
-Nästa version av javascript som stöds av de flesta (ES5)
--------------------------------------------------------
+## Nästa version av javascript som stöds av de flesta (ES5)
+
 Bättre programmering för kodninjor.
 
-Det funkar inte!
-----------------
+## Det funkar inte!
 
 - Jshint (finns i editor o online) [http://www.jshint.com/]
 - Fiddler [http://fiddler2.com/]
 - Webbläsare
 
-Choose your own advendure (object orientation)
-----------------------------------------------
+## Choose your own advendure (object orientation)
 
-Enklast möjligt
----------------
+### Enklast möjligt
 
     var ConstructorFunction = function(values){
         var self = this;
@@ -45,14 +40,12 @@ Enklast möjligt
         };
     }
 
-Kodninja
---------
+### Kodninja
 
 - Prototype
 - Mixed
 
-Mvc-ish/mvvm like frameworks
-----------------------------
+## Mvc-ish/mvvm like frameworks
 
 - Mängder med olika (t.ex. angular)
 - Stor del av infrastrukturen för one page app
@@ -60,14 +53,13 @@ Mvc-ish/mvvm like frameworks
 - Inte en helhetslösning
 - Drinking the cool aid
 
-Lime bootstrap++
-----------------
+## Lime bootstrap++
 
 - Webservice förenklar för konsulterna
 - Stöd i lime Pro servern för att hosta app:ar?
 
-Varför bör vi inte göra vbscript i web?
----------------------------------------
+## Varför bör vi inte göra vbscript i web?
+
 Det är definitivt möjligt.
 
 Varför tror jag att det kommer inte att hända?
