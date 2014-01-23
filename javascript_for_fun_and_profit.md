@@ -22,6 +22,7 @@ Bättre programmering för kodninjor.
 
 - Jshint (finns i editor o online) [http://www.jshint.com/]
 - Fiddler [http://fiddler2.com/]
+- JsFiddle [http://jsfiddle.net/]
 - Webbläsare
 
 ## Choose your own advendure (object orientation)
