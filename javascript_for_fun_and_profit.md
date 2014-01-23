@@ -2,8 +2,6 @@
 
 ## Historia
 
-
-
 ## Ko for fun and profit
 
 Vad kan man göra med knockout [knockoutjs.com]?
@@ -31,10 +29,12 @@ Bättre programmering för kodninjor.
 
 ## Choose your own adventure (object orientation)
 
+Det fungerar inte som de andra språk om man har kodat något annat
+
 ### Enklast möjligt
 
-    var ConstructorFunction = function(values){
-        var self = this;
+    var factoryFunction = function(values){
+        var self = {};
         self.pubnamn = "hej hopp ";
         self.methodUsingPublicProperty = function(name){
             return self.pubnamn + name;
@@ -43,20 +43,25 @@ Bättre programmering för kodninjor.
         self.methodUsingPrivateVariable = function(name){
             return privateVariable + name;
         };
+        return self;
     }
 
 ### Kodninja
 
 - Prototype
-- Mixed
+- Mix av olika objekt
 
-## Mvc-ish/mvvm like frameworks
+Fördel att köra enklast möjliga så att man inte kommer ut på djupt vatten.
 
-- Mängder med olika (t.ex. angular)
-- Stor del av infrastrukturen för one page app
+## Single page app
+
+Modernt med applikationer skrivna helt i javascript som liknar en lime pro klient mer än wikipedia
+
+- Mängder med olika ramverk (t.ex. angular)
+- Stor del av infrastrukturen
 - Rätt mycket att sätta sig in i
 - Inte en helhetslösning
-- Drinking the cool aid
+- Drinking the cool aid: Det är väldigt inne men inte lösning på alla problem
 
 ## Lime bootstrap++
 
@@ -70,9 +75,43 @@ Det är definitivt möjligt.
 Varför tror jag att det kommer inte att hända?
 
 - Exempel är oftast javascript.
-- Få bekanta Api:er
+- Få bekanta Api:er, programmeringen kommer ändå vara obekant
 - Ser bra ut på cv med js
 
 Sure, we can do it. But you will be pissed off because of X (and there wont always be a pretty solution). 
+
+## Js
+
+### 
+
+###
+
+## Övningar
+
+### WTF
+
+    2 == "2"   # => true
+    2 === "2"  # => false
+    2 !== 3    # => true
+    0 == []    # => true
+    0 >= []    # => true
+
+### Allt async! (jquery + ajax)
+
+    $.ajax({
+        url: "test.html",
+        context: document.body
+    }).done(function() {
+        $( this ).addClass( "done" );
+    });
+
+
+### skapa upp objekt
+
+### iterera över en lista
+
+    for - fucked up
+
+### 
 
 
