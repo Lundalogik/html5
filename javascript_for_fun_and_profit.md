@@ -125,7 +125,7 @@ Saker att testa. När funkar instanceof. Vad händer med de olika sätten om man
 
     // Declaring our Animal object
     var Animal = function () {
-        var self = this===window ? {} : this; //perlism
+        var self = this; //perlism
         
         self.name = 'unknown';
 
@@ -136,13 +136,6 @@ Saker att testa. När funkar instanceof. Vad händer med de olika sätten om man
         return self;
     };
 
-Vad händer om man tar bort 
-
-    var self = this===window ? {} : this;
-
-och ersätter med:
-
-    var self = this;
 
 Vad händer om du kör
 
