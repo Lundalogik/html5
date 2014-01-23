@@ -22,10 +22,10 @@ Bättre programmering för kodninjor.
 
 ## Det funkar inte!
 
-- Jshint (finns i editor o online) [http://www.jshint.com/]
-- Fiddler [http://fiddler2.com/]
-- JsFiddle [http://jsfiddle.net/]
-- Webbläsare
+- [Jshint](http://www.jshint.com/) (finns i editor o online) 
+- [Fiddler](http://fiddler2.com/)
+- [JsFiddle](http://jsfiddle.net/)
+- Webläsaren!
 
 ## Choose your own adventure (object orientation)
 
