@@ -113,7 +113,7 @@ Uppgiften här är att se vad som är möjligt. Att hämta ut data. Att manipule
 
 Saker att testa. När funkar instanceof. Vad händer med de olika sätten om man glömmer "new". 
 
-(new)[http://jsfiddle.net/ozzymcduff/5dU2T/]
+[new](http://jsfiddle.net/ozzymcduff/5dU2T/)
 
     // Declaring our Animal object
     var Animal = function () {
@@ -136,7 +136,7 @@ och ersätter med:
 
     var self = this;
 
-(prototype)[http://jsfiddle.net/ozzymcduff/Xd553/]
+[prototype](http://jsfiddle.net/ozzymcduff/Xd553/)
 
     var Animal = function () {};
     Animal.prototype.name = 'unknown';
@@ -151,7 +151,7 @@ Vad händer om man använder detta tillsammans med jquery? Tex ajax anrop:
         context: document.body
     }).done(dog.bark);
 
-(factory metod)[http://jsfiddle.net/ozzymcduff/XqSBg/]
+[factory metod](http://jsfiddle.net/ozzymcduff/XqSBg/)
 
     var createAnimal = function () {
         var self = {};
