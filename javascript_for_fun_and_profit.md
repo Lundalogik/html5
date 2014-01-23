@@ -136,6 +136,10 @@ och ersätter med:
 
     var self = this;
 
+Vad händer om du kör
+
+    var dog = Dog.call(null);
+
 [prototype](http://jsfiddle.net/ozzymcduff/Xd553/)
 
     var Animal = function () {};
