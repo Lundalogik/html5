@@ -90,13 +90,17 @@ Sure, we can do it. But you will be pissed off because of X (and there wont alwa
 
 ### WTF
 
-    2 == "2"   # => true
-    2 === "2"  # => false
-    2 !== 3    # => true
-    0 == []    # => true
-    0 >= []    # => true
+Öppna debugkonsollen i chrome eller internet explorer och testa att köra
+
+    2 == "2"   // => true
+    2 === "2"  // => false
+    2 !== 3    // => true
+    0 == []    // => true
+    0 >= []    // => true
 
 ### Allt async! (jquery + ajax)
+
+Pröva async genom att testa att gå mot en web service [skanetrafiken](https://github.com/wallymathieu/skanetrafiken)
 
     $.ajax({
         url: "test.html",
@@ -105,12 +109,19 @@ Sure, we can do it. But you will be pissed off because of X (and there wont alwa
         $( this ).addClass( "done" );
     });
 
+Uppgiften här är att se vad som är möjligt. Att hämta ut data. Att manipulera data och visa det.
 
 ### skapa upp objekt
 
+(factory metod)[http://jsfiddle.net/ozzymcduff/XqSBg/]
+
+(new)[http://jsfiddle.net/ozzymcduff/5dU2T/]
+    
 ### iterera över en lista
 
-    for - fucked up
+for - fucked up
+    
+    
 
 ### 
 
