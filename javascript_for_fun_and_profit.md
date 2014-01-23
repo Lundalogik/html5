@@ -90,6 +90,8 @@ Sure, we can do it. But you will be pissed off because of X (and there wont alwa
 
 ### WTF
 
+https://www.destroyallsoftware.com/talks/wat
+
 Öppna debugkonsollen i chrome eller internet explorer och testa att köra
 
     2 == "2"   // => true
