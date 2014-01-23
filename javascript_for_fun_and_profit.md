@@ -46,6 +46,14 @@ Det fungerar inte som de andra språk om man har kodat något annat
         return self;
     }
 
+Fördelar: 
+- konceptuellt enkelt
+- behöver inte göra new
+
+Nackdelar:
+- instanceof
+- konstruktor syns inte på objektet (när man debuggar)
+
 ### Kodninja
 
 - Prototype
