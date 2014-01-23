@@ -1,5 +1,9 @@
 # Birds eye view
 
+## Historia
+
+
+
 ## Ko for fun and profit
 
 Vad kan man göra med knockout [knockoutjs.com]?
@@ -25,7 +29,7 @@ Bättre programmering för kodninjor.
 - JsFiddle [http://jsfiddle.net/]
 - Webbläsare
 
-## Choose your own advendure (object orientation)
+## Choose your own adventure (object orientation)
 
 ### Enklast möjligt
 
