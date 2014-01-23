@@ -4,7 +4,7 @@
 
 ## Ko for fun and profit
 
-Vad kan man göra med knockout [knockoutjs.com]?
+Vad kan man göra med [knockout](knockoutjs.com)?
 
 Följande blir enklare:
 - Uppdateringar i gui
