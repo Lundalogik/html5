@@ -1,7 +1,5 @@
 # Birds eye view
 
-## Historia
-
 ## Ko for fun and profit
 
 Vad kan man göra med [knockout](knockoutjs.com)?
