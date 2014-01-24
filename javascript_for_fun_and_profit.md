@@ -107,13 +107,6 @@ En bra grundregel är att alltid använda === och !==. Js == och != är riktigt 
 
 Pröva async genom att testa att gå mot en web service [skanetrafiken](https://github.com/wallymathieu/skanetrafiken)
 
-    $.ajax({
-        url: "test.html",
-        context: document.body
-    }).done(function() {
-        $( this ).addClass( "done" );
-    });
-
 Uppgiften här är att se vad som är möjligt. Att hämta ut data. Att manipulera data och visa det.
 
 ### skapa upp objekt
@@ -155,6 +148,8 @@ Vad händer om man använder detta tillsammans med jquery? Tex ajax anrop:
         context: document.body
     }).done(dog.bark);
 
+[Från jquery dokumentationen](http://api.jquery.com/jQuery.ajax//)
+
 [factory metod](http://jsfiddle.net/ozzymcduff/XqSBg/)
 
     var createAnimal = function () {
@@ -181,10 +176,9 @@ Testa tex att köra olika varianterna med:
 Notera this i ajax-exempel nedan:
 
     $.ajax({
-      url: "test.html",
-      context: document.body
+      url: "test.html"
     }).done(function() {
-      $( this ).addClass( "done" );
+      $( ".my-loader" ).addClass( "done" );
     });
 
 Ett annat exempel i jquery sammanhang är:
@@ -193,6 +187,7 @@ Ett annat exempel i jquery sammanhang är:
       var color = $( this ).css( "background-color" );
       $( "#result" ).html( "That div is <span style='color:" + color + ";'>" + color + "</span>." );
     });
+[Från jquery dokumentationen](http://api.jquery.com/css/)
 
 [Exempel på this](http://jsbin.com/iJOQeRoJ/16/edit?js,console)
 
