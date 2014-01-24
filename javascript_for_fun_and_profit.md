@@ -13,7 +13,7 @@ Följande blir enklare:
 
 ## Behöver jag fortfarande JQuery?
 
-- Ja! JQuery är fortfarande awesome! 
+- Ja! JQuery är fortfarande awesome!
 - Simpel html + lite jquery är snabbare än att göra single page app.
 
 ## Nästa version av javascript som stöds av de flesta (ES5)
@@ -22,7 +22,7 @@ Bättre programmering för kodninjor.
 
 ## Det funkar inte!
 
-- [Jshint](http://www.jshint.com/) (finns i editor o online) 
+- [Jshint](http://www.jshint.com/) (finns i editor o online)
 - [Fiddler](http://fiddler2.com/)
 - [JsFiddle](http://jsfiddle.net/)
 - Webläsaren!
@@ -46,7 +46,7 @@ Det fungerar inte som de andra språk om man har kodat något annat
         return self;
     }
 
-Fördelar: 
+Fördelar:
 - konceptuellt enkelt
 - behöver inte göra new
 
@@ -86,7 +86,7 @@ Varför tror jag att det kommer inte att hända?
 - Få bekanta Api:er, programmeringen kommer ändå vara obekant
 - Ser bra ut på cv med js
 
-Sure, we can do it. But you will be pissed off because of X (and there wont always be a pretty solution). 
+Sure, we can do it. But you will be pissed off because of X (and there wont always be a pretty solution).
 
 ## Övningar
 
@@ -119,14 +119,14 @@ Uppgiften här är att se vad som är möjligt. Att hämta ut data. Att manipule
 
 ### skapa upp objekt
 
-Saker att testa. När funkar instanceof. Vad händer med de olika sätten om man glömmer "new". 
+Saker att testa. När funkar instanceof. Vad händer med de olika sätten om man glömmer "new".
 
 [new](http://jsfiddle.net/ozzymcduff/5dU2T/)
 
     // Declaring our Animal object
     var Animal = function () {
         var self = this; //perlism
-        
+
         self.name = 'unknown';
 
         self.getName = function () {
@@ -179,6 +179,8 @@ Testa tex att köra olika varianterna med:
 
     dog.bark.call(null);
 
+[Exempel på this](http://jsbin.com/iJOQeRoJ/16/edit?js,console)
+
 ### iterera över en lista
 
 for - fungerar inte som man förväntar sig
@@ -191,7 +193,7 @@ bättre att använda t.ex. jquery:
 
 ### Scope
 
-Exempel på scope: 
+Exempel på scope:
 [inner animal](http://jsfiddle.net/ozzymcduff/A8fM9/)
 
 ### Undefined, null whöt?
