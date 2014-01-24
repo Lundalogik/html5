@@ -61,6 +61,10 @@ Nackdelar:
 
 Fördel att köra enklast möjliga så att man inte kommer ut på djupt vatten.
 
+## Nästa version av javascript som stöds av de flesta (ES5)
+
+Bättre programmering för kodninjor.
+
 ## Single page app
 
 Modernt med applikationer skrivna helt i javascript som liknar en lime pro klient mer än wikipedia
@@ -70,6 +74,21 @@ Modernt med applikationer skrivna helt i javascript som liknar en lime pro klien
 - Rätt mycket att sätta sig in i
 - Inte en helhetslösning
 - Drinking the cool aid: Det är väldigt inne men inte lösning på alla problem
+
+
+## Ko for fun and profit
+
+Vad kan man göra med [knockout](knockoutjs.com)?
+
+Följande blir enklare:
+- Uppdateringar i gui
+- Uppdateringar i på dina tabeller
+- Trigga vid click meck
+
+## Behöver jag fortfarande JQuery?
+
+- Ja! JQuery är fortfarande awesome!
+- Simpel html + lite jquery är snabbare än att göra single page app.
 
 ## Lime bootstrap++
 
@@ -87,6 +106,13 @@ Varför tror jag att det kommer inte att hända?
 - Ser bra ut på cv med js
 
 Sure, we can do it. But you will be pissed off because of X (and there wont always be a pretty solution).
+
+## Det funkar inte!
+
+- [Jshint](http://www.jshint.com/) (finns i editor o online)
+- [Fiddler](http://fiddler2.com/)
+- [JsFiddle](http://jsfiddle.net/)
+- Webläsaren!
 
 ## Övningar
 
