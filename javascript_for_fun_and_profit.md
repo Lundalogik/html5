@@ -1,4 +1,4 @@
-# Birds eye view
+# Javascript for fun and profit
 
 ## Choose your own adventure (object orientation)
 
