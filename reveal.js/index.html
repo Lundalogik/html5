@@ -47,13 +47,13 @@
       <div class="slides">
         <section>
           <h1>HTML5</h1>
-          <h4 style="line-height: 1.2em;">och en del annat som inte alls är HTML5 men som folk menar när de säger HTML5 för HTML5 låter så coolt</h4>
+          <h4 class="fragment" style="line-height: 1.2em;">och en del annat som inte alls är HTML5 men som folk menar när de säger HTML5 för HTML5 låter så coolt</h4>
         </section>
 
         <section>
           <h2>Vad är HTML5?</h2>
           <p class="fragment">
-            <img src="html5-superman.jpg" style="max-height: 60%;" />
+            <img src="html5-superman.jpg" style="height: 480px;" />
           </p>
           <p class="fragment">
             ?
@@ -64,21 +64,21 @@
           <section data-transition="none">
             <h2>Snarare detta</h2>
             <p>
-              <img src="HTML5-APIs-and-related-technologies-by-Sergey-Mavrody-2011.png" style="max-height: 70%;" />
+              <img src="HTML5-APIs-and-related-technologies-by-Sergey-Mavrody-2011.png" style="height: 480px;" />
             </p>
             <p>December 2011</p>
           </section>
           <section data-transition="none">
             <h2>Ursäkta, detta</h2>
             <p>
-              <img src="HTML5-APIs-and-related-technologies-by-Sergey-Mavrody-2012.png" style="max-height: 70%;" />
+              <img src="HTML5-APIs-and-related-technologies-by-Sergey-Mavrody-2012.png" style="height: 480px;" />
             </p>
             <p>20:e december 2012</p>
           </section>
           <section data-transition="none">
             <h2>Err…</h2>
             <p>
-              <img src="HTML5-APIs-and-related-technologies-by-Sergey-Mavrody-2013.png" style="max-height: 70%;" />
+              <img src="HTML5-APIs-and-related-technologies-by-Sergey-Mavrody-2013.png" style="height: 480px;" />
             </p>
             <p>20:e januari 2013</p>
 
@@ -704,10 +704,10 @@
             <h2>Rubriker och underrubriker</h2>
             <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
 &lt;article&gt;
-  &lt;header&gt;
+  &lt;hgroup&gt;
     &lt;h1&gt;Rubrik&lt;/h1&gt;
     &lt;h2&gt;Underrubrik&lt;/h2&gt;
-  &lt;/header&gt;
+  &lt;/hgroup&gt;
 
   Artikelns innehåll här…
 &lt;/article&gt;
@@ -715,7 +715,8 @@
 
             <aside class="notes">
               Vill man "bunta ihop" rubriker och underrubriker kan det finnas anledning att använda både h1 och h2.<br />
-              Man wrappar då dessa i en <em>header</em> för att indikera att de hör ihop och båda ska betraktas som rubrik för hela innehållet i omgivande element (i detta fall article).
+              Man wrappar då dessa i en <em>hgroup</em> för att indikera att de hör ihop och båda ska betraktas som rubrik för hela innehållet i omgivande element (i detta fall article).<br />
+              I dokument-outlinen visas endast den av rubrikerna i gruppen som har högst värde. I detta fall <em>h1</em>.
             </aside>
           </section>
 
@@ -723,10 +724,10 @@
             <h2>Rubriker och underrubriker</h2>
             <pre><code data-trim contenteditable style="font-size: 14px; line-height: 18px; margin-top: 20px;">
 &lt;article&gt;
-  &lt;header&gt;
+  &lt;hgroup&gt;
     &lt;h1&gt;Rubrik&lt;/h1&gt;
     &lt;h2&gt;Underrubrik&lt;/h2&gt;
-  &lt;/header&gt;
+  &lt;/hgroup&gt;
 
   Artikelns innehåll här…
 &lt;/article&gt;
