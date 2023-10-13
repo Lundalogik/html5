@@ -1,3 +1,7 @@
+This is material from a training session from many years ago. It has not been
+updated at all since then, and newer sources should be used instead of this.
+Therefore, this repo has been archived.
+
 html5
 =====
 
